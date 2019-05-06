@@ -19,7 +19,7 @@ pub struct IcmpClient {
   rx: mpsc::Receiver<Vec<u8>>,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct IcmpData {
   src: net::Ipv4Addr,
   dst: net::Ipv4Addr,
